@@ -1,0 +1,19 @@
+/* Correct usage of calc() */
+#element {
+  width: calc(100% - 10px);
+  /* Consistent units and proper spacing */
+  height: calc(50vh - 20px);
+  /* Correct spacing and mixed units */
+  margin: calc(10px + 5%);
+}
+
+/* Incorrect usage: Missing spaces */
+/*#element {
+  width: calc(100%-10px);  /* Incorrect: Missing space before minus */
+  height: calc(50vh-20px);  /* Incorrect: Missing space before minus */
+}*/
+
+/* Incorrect usage: Inconsistent units */
+/*#element {
+  width: calc(100% - 10em); /* Incorrect: Mixing units */
+}*/
